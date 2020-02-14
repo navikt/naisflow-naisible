@@ -6,7 +6,6 @@ Documentation=https://github.com/GoogleCloudPlatform/kubernetes
 Environment="TZ=UTC"
 Environment="PATH=/opt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin"
 ExecStart=/opt/bin/kube-proxy \
-  --cluster-cidr=192.168.0.0/16 \
   --kubeconfig=/etc/kubernetes/kubeconfigs/kube-proxy.conf \
   --proxy-mode=ipvs \
   --v=2
